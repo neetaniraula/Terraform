@@ -8,12 +8,11 @@ terraform {
   }
 }
 
-/*#Configure aws provider
-provider "aws" {
+#Configure aws provider
+provider "registry.terraform.io/hashicorp/aws" {
   profile = "default"
   region  = "us-east-1"
 }
-*/
 
 #Resource Block ec2
 resource "aws_instance" "app_server" {
