@@ -9,7 +9,7 @@ terraform {
 }
 
 #Configure aws provider
-provider "registry.terraform.io/hashicorp/aws" {
+provider "aws" {
   profile = "default"
   region  = "us-east-1"
 }
